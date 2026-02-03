@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zephyr"
+description = "Zephyr: A photochemical and climate model for exoplanets."
+authors = [
+    { name = "Aiden Zelakiewicz", email = "asz39@cornell.edu"}
+]
+readme = "README.md"
+version = "0.0.1"
+dynamic = ["dependencies"]
+# license = { file = "LICENSE" } will add a license eventually
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["zephyr*"]
+namespaces = false
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
