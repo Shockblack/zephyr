@@ -1,0 +1,17 @@
+planet:
+  name: Earth # Planet's name (for file structure)
+  radius: 1. # Planetary radius
+  radius_unit: R_earth # Astropy unit for radius (Defaults to R_earth)
+  mass: 1. # Planetary mass
+  mass_unit: M_earth # Astropy unit for mass (Defaults to M_earth)
+  sma: 1. # Semimajor axis
+  sma_unit: AU # Astropy unit for semimajor axis (Defaults to AU)
+star:
+  teff: 5778. # Stellar effective temperature in K
+  logg: 4.4 # log(g) in log(cm/s^2)
+  met: 0. # Metallicity in units of solar metallicity
+  d: 10. # Distance to stellar system
+  d_unit: pc # Astropy unit for distance (Defaults to pc)
+atmosphere:
+
+surface:
